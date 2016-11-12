@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEF7B8D41DD699DE00F696FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8D31DD699DE00F696FF /* AppDelegate.swift */; };
+		DEF7B8D61DD699DE00F696FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8D51DD699DE00F696FF /* ViewController.swift */; };
+		DEF7B8D91DD699DE00F696FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B8D71DD699DE00F696FF /* Main.storyboard */; };
+		DEF7B8DB1DD699DE00F696FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B8DA1DD699DE00F696FF /* Assets.xcassets */; };
+		DEF7B8DE1DD699DE00F696FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B8DC1DD699DE00F696FF /* LaunchScreen.storyboard */; };
+		DEF7B8E91DD699DE00F696FF /* zillowGunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8E81DD699DE00F696FF /* zillowGunTests.swift */; };
+		DEF7B8F41DD699DE00F696FF /* zillowGunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8F31DD699DE00F696FF /* zillowGunUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF7B8E51DD699DE00F696FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF7B8C81DD699DE00F696FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF7B8CF1DD699DE00F696FF;
+			remoteInfo = zillowGun;
+		};
+		DEF7B8F01DD699DE00F696FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF7B8C81DD699DE00F696FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF7B8CF1DD699DE00F696FF;
+			remoteInfo = zillowGun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEF7B8D01DD699DE00F696FF /* zillowGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zillowGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF7B8D31DD699DE00F696FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEF7B8D51DD699DE00F696FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEF7B8D81DD699DE00F696FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEF7B8DA1DD699DE00F696FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF7B8DD1DD699DE00F696FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEF7B8DF1DD699DE00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF7B8E41DD699DE00F696FF /* zillowGunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zillowGunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF7B8E81DD699DE00F696FF /* zillowGunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zillowGunTests.swift; sourceTree = "<group>"; };
+		DEF7B8EA1DD699DE00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF7B8EF1DD699DE00F696FF /* zillowGunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zillowGunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF7B8F31DD699DE00F696FF /* zillowGunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zillowGunUITests.swift; sourceTree = "<group>"; };
+		DEF7B8F51DD699DE00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF7B8CD1DD699DE00F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8E11DD699DE00F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8EC1DD699DE00F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF7B8C71DD699DE00F696FF = {
+			isa = PBXGroup;
+			children = (
+				DEF7B8D21DD699DE00F696FF /* zillowGun */,
+				DEF7B8E71DD699DE00F696FF /* zillowGunTests */,
+				DEF7B8F21DD699DE00F696FF /* zillowGunUITests */,
+				DEF7B8D11DD699DE00F696FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF7B8D11DD699DE00F696FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7B8D01DD699DE00F696FF /* zillowGun.app */,
+				DEF7B8E41DD699DE00F696FF /* zillowGunTests.xctest */,
+				DEF7B8EF1DD699DE00F696FF /* zillowGunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF7B8D21DD699DE00F696FF /* zillowGun */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7B8D31DD699DE00F696FF /* AppDelegate.swift */,
+				DEF7B8D51DD699DE00F696FF /* ViewController.swift */,
+				DEF7B8D71DD699DE00F696FF /* Main.storyboard */,
+				DEF7B8DA1DD699DE00F696FF /* Assets.xcassets */,
+				DEF7B8DC1DD699DE00F696FF /* LaunchScreen.storyboard */,
+				DEF7B8DF1DD699DE00F696FF /* Info.plist */,
+			);
+			path = zillowGun;
+			sourceTree = "<group>";
+		};
+		DEF7B8E71DD699DE00F696FF /* zillowGunTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7B8E81DD699DE00F696FF /* zillowGunTests.swift */,
+				DEF7B8EA1DD699DE00F696FF /* Info.plist */,
+			);
+			path = zillowGunTests;
+			sourceTree = "<group>";
+		};
+		DEF7B8F21DD699DE00F696FF /* zillowGunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7B8F31DD699DE00F696FF /* zillowGunUITests.swift */,
+				DEF7B8F51DD699DE00F696FF /* Info.plist */,
+			);
+			path = zillowGunUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF7B8CF1DD699DE00F696FF /* zillowGun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF7B8F81DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGun" */;
+			buildPhases = (
+				DEF7B8CC1DD699DE00F696FF /* Sources */,
+				DEF7B8CD1DD699DE00F696FF /* Frameworks */,
+				DEF7B8CE1DD699DE00F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zillowGun;
+			productName = zillowGun;
+			productReference = DEF7B8D01DD699DE00F696FF /* zillowGun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF7B8E31DD699DE00F696FF /* zillowGunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF7B8FB1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunTests" */;
+			buildPhases = (
+				DEF7B8E01DD699DE00F696FF /* Sources */,
+				DEF7B8E11DD699DE00F696FF /* Frameworks */,
+				DEF7B8E21DD699DE00F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF7B8E61DD699DE00F696FF /* PBXTargetDependency */,
+			);
+			name = zillowGunTests;
+			productName = zillowGunTests;
+			productReference = DEF7B8E41DD699DE00F696FF /* zillowGunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEF7B8EE1DD699DE00F696FF /* zillowGunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF7B8FE1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunUITests" */;
+			buildPhases = (
+				DEF7B8EB1DD699DE00F696FF /* Sources */,
+				DEF7B8EC1DD699DE00F696FF /* Frameworks */,
+				DEF7B8ED1DD699DE00F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF7B8F11DD699DE00F696FF /* PBXTargetDependency */,
+			);
+			name = zillowGunUITests;
+			productName = zillowGunUITests;
+			productReference = DEF7B8EF1DD699DE00F696FF /* zillowGunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF7B8C81DD699DE00F696FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Anne Maiale";
+				TargetAttributes = {
+					DEF7B8CF1DD699DE00F696FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					DEF7B8E31DD699DE00F696FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DEF7B8CF1DD699DE00F696FF;
+					};
+					DEF7B8EE1DD699DE00F696FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DEF7B8CF1DD699DE00F696FF;
+					};
+				};
+			};
+			buildConfigurationList = DEF7B8CB1DD699DE00F696FF /* Build configuration list for PBXProject "zillowGun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF7B8C71DD699DE00F696FF;
+			productRefGroup = DEF7B8D11DD699DE00F696FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF7B8CF1DD699DE00F696FF /* zillowGun */,
+				DEF7B8E31DD699DE00F696FF /* zillowGunTests */,
+				DEF7B8EE1DD699DE00F696FF /* zillowGunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF7B8CE1DD699DE00F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF7B8DE1DD699DE00F696FF /* LaunchScreen.storyboard in Resources */,
+				DEF7B8DB1DD699DE00F696FF /* Assets.xcassets in Resources */,
+				DEF7B8D91DD699DE00F696FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8E21DD699DE00F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8ED1DD699DE00F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF7B8CC1DD699DE00F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF7B8D61DD699DE00F696FF /* ViewController.swift in Sources */,
+				DEF7B8D41DD699DE00F696FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8E01DD699DE00F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF7B8E91DD699DE00F696FF /* zillowGunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7B8EB1DD699DE00F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF7B8F41DD699DE00F696FF /* zillowGunUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF7B8E61DD699DE00F696FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF7B8CF1DD699DE00F696FF /* zillowGun */;
+			targetProxy = DEF7B8E51DD699DE00F696FF /* PBXContainerItemProxy */;
+		};
+		DEF7B8F11DD699DE00F696FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF7B8CF1DD699DE00F696FF /* zillowGun */;
+			targetProxy = DEF7B8F01DD699DE00F696FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEF7B8D71DD699DE00F696FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF7B8D81DD699DE00F696FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEF7B8DC1DD699DE00F696FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF7B8DD1DD699DE00F696FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF7B8F61DD699DE00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF7B8F71DD699DE00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF7B8F91DD699DE00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = zillowGun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DEF7B8FA1DD699DE00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = zillowGun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DEF7B8FC1DD699DE00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = zillowGunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zillowGun.app/zillowGun";
+			};
+			name = Debug;
+		};
+		DEF7B8FD1DD699DE00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = zillowGunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zillowGun.app/zillowGun";
+			};
+			name = Release;
+		};
+		DEF7B8FF1DD699DE00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = zillowGunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = zillowGun;
+			};
+			name = Debug;
+		};
+		DEF7B9001DD699DE00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = zillowGunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = zillowGun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF7B8CB1DD699DE00F696FF /* Build configuration list for PBXProject "zillowGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF7B8F61DD699DE00F696FF /* Debug */,
+				DEF7B8F71DD699DE00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF7B8F81DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF7B8F91DD699DE00F696FF /* Debug */,
+				DEF7B8FA1DD699DE00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEF7B8FB1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF7B8FC1DD699DE00F696FF /* Debug */,
+				DEF7B8FD1DD699DE00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEF7B8FE1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF7B8FF1DD699DE00F696FF /* Debug */,
+				DEF7B9001DD699DE00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF7B8C81DD699DE00F696FF /* Project object */;
+}
