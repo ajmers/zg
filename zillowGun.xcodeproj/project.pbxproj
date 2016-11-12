@@ -14,6 +14,10 @@
 		DEF7B8DE1DD699DE00F696FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B8DC1DD699DE00F696FF /* LaunchScreen.storyboard */; };
 		DEF7B8E91DD699DE00F696FF /* zillowGunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8E81DD699DE00F696FF /* zillowGunTests.swift */; };
 		DEF7B8F41DD699DE00F696FF /* zillowGunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B8F31DD699DE00F696FF /* zillowGunUITests.swift */; };
+		DEF7B9031DD6A75D00F696FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF7B9021DD6A75D00F696FF /* CoreLocation.framework */; };
+		DEF7B9071DD7BC7700F696FF /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B9061DD7BC7700F696FF /* ApiKeys.swift */; };
+		DEF7B9091DD7C18700F696FF /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B9081DD7C18700F696FF /* ApiKeys.plist */; };
+		DEF7B90B1DD7C2BC00F696FF /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		DEF7B8EF1DD699DE00F696FF /* zillowGunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zillowGunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF7B8F31DD699DE00F696FF /* zillowGunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zillowGunUITests.swift; sourceTree = "<group>"; };
 		DEF7B8F51DD699DE00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF7B9021DD6A75D00F696FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DEF7B9061DD7BC7700F696FF /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		DEF7B9081DD7C18700F696FF /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = ../GlobalConstants.swift; sourceTree = "<group>"; };
+		DEF7B90C1DD7DB3200F696FF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		DEF7B90E1DD7DB3B00F696FF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF7B9031DD6A75D00F696FF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 				DEF7B8E71DD699DE00F696FF /* zillowGunTests */,
 				DEF7B8F21DD699DE00F696FF /* zillowGunUITests */,
 				DEF7B8D11DD699DE00F696FF /* Products */,
+				DEF7B9011DD6A75D00F696FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +109,15 @@
 		DEF7B8D21DD699DE00F696FF /* zillowGun */ = {
 			isa = PBXGroup;
 			children = (
+				DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */,
 				DEF7B8D31DD699DE00F696FF /* AppDelegate.swift */,
 				DEF7B8D51DD699DE00F696FF /* ViewController.swift */,
 				DEF7B8D71DD699DE00F696FF /* Main.storyboard */,
 				DEF7B8DA1DD699DE00F696FF /* Assets.xcassets */,
 				DEF7B8DC1DD699DE00F696FF /* LaunchScreen.storyboard */,
 				DEF7B8DF1DD699DE00F696FF /* Info.plist */,
+				DEF7B9081DD7C18700F696FF /* ApiKeys.plist */,
+				DEF7B9061DD7BC7700F696FF /* ApiKeys.swift */,
 			);
 			path = zillowGun;
 			sourceTree = "<group>";
@@ -123,6 +138,16 @@
 				DEF7B8F51DD699DE00F696FF /* Info.plist */,
 			);
 			path = zillowGunUITests;
+			sourceTree = "<group>";
+		};
+		DEF7B9011DD6A75D00F696FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7B90E1DD7DB3B00F696FF /* AddressBookUI.framework */,
+				DEF7B90C1DD7DB3200F696FF /* AddressBook.framework */,
+				DEF7B9021DD6A75D00F696FF /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,7 @@
 				TargetAttributes = {
 					DEF7B8CF1DD699DE00F696FF = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BXSBXKBR9K;
 						ProvisioningStyle = Automatic;
 					};
 					DEF7B8E31DD699DE00F696FF = {
@@ -235,6 +261,7 @@
 				DEF7B8DE1DD699DE00F696FF /* LaunchScreen.storyboard in Resources */,
 				DEF7B8DB1DD699DE00F696FF /* Assets.xcassets in Resources */,
 				DEF7B8D91DD699DE00F696FF /* Main.storyboard in Resources */,
+				DEF7B9091DD7C18700F696FF /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +288,8 @@
 			files = (
 				DEF7B8D61DD699DE00F696FF /* ViewController.swift in Sources */,
 				DEF7B8D41DD699DE00F696FF /* AppDelegate.swift in Sources */,
+				DEF7B90B1DD7C2BC00F696FF /* GlobalConstants.swift in Sources */,
+				DEF7B9071DD7BC7700F696FF /* ApiKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BXSBXKBR9K;
 				INFOPLIST_FILE = zillowGun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGun;
@@ -424,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BXSBXKBR9K;
 				INFOPLIST_FILE = zillowGun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zillowGun.zillowGun;
@@ -505,6 +536,7 @@
 				DEF7B8FA1DD699DE00F696FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEF7B8FB1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +545,7 @@
 				DEF7B8FD1DD699DE00F696FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEF7B8FE1DD699DE00F696FF /* Build configuration list for PBXNativeTarget "zillowGunUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +554,7 @@
 				DEF7B9001DD699DE00F696FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
