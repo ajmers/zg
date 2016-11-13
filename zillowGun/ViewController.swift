@@ -10,7 +10,10 @@ import UIKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDelegate {
-
+    var currentElementName = ""
+    var listing = ZillowListing()
+    var passData:Bool=false
+    
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +42,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDele
             
             if (placemarks?.count)! > 0 {
                 let pm = (placemarks?[0])! as CLPlacemark
-                var address = pm.thoroughfare
+                let address = pm.thoroughfare
                 print(address)
                 print(pm.subThoroughfare)
                 print(pm.postalCode)
@@ -54,6 +57,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDele
     func getZillowSearchResults(forPlacemark placemark: CLPlacemark) {
         locationManager.stopUpdatingLocation()
         
+        print(placemark.isoCountryCode)
+        
         if placemark.isoCountryCode != "US" {
             print("Error: Must be in the US")
             return
@@ -63,30 +68,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDele
         let addressString = "\(placemark.subThoroughfare!) \(placemark.thoroughfare!)"
         let citystatezip = "\(placemark.locality!) \(placemark.administrativeArea!) \(placemark.postalCode!)"
         
-        var escapedAddressString = addressString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        var escapedCityStateZip = citystatezip.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let escapedAddressString = addressString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let escapedCityStateZip = citystatezip.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
         let searchEndpoint = "\(zillowBaseURL)GetSearchResults.htm?zws-id=\(clientID)&address=\(escapedAddressString!)&citystatezip=\(escapedCityStateZip!)"
         guard let url = URL(string: searchEndpoint) else {
             print("Error: cannot create URL")
             return
         }
-        let urlRequest = URLRequest(url: url)
+
+        let parser = XMLParser(contentsOf: url)!
+        parser.delegate = self
         
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
+        let success:Bool = parser.parse()
         
-        let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
-            // do stuff with response, data & error here
-            print(data)
-            let parser = XMLParser(data: data!)
-            parser.delegate = self
-            let obj = parser.parse()
-            print(obj)
-            print(response)
-            print(error)
-        })
-        task.resume()
+        if success {
+            print("parse success!")
+            
+        } else {
+            print("parse failure!")
+        }
     }
 
     func displayLocationInfo(placemark: CLPlacemark) {
@@ -109,7 +110,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDele
     
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus){
-        print(status)
         if status == .authorizedAlways || status == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
         } else {
@@ -122,6 +122,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate, XMLParserDele
         // Dispose of any resources that can be recreated.
     }
 
+    // Parser functions
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+        currentElementName = elementName;
+        print(currentElementName)
+        if (currentElementName == "zpid" || elementName=="zestimate") {
+            passData = true;
+        }
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        // passData=false;
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        if (passData){
+            if currentElementName == "zpid" {
+                listing.zpid = string
+            } else if currentElementName == "zestimate" {
+                listing.zestimate = string
+            }
+        }
+    }
+    
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+        print("failure error: ", parseError)
+    }
 
 }
 

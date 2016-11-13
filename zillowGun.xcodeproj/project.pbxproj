@@ -18,6 +18,7 @@
 		DEF7B9071DD7BC7700F696FF /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B9061DD7BC7700F696FF /* ApiKeys.swift */; };
 		DEF7B9091DD7C18700F696FF /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF7B9081DD7C18700F696FF /* ApiKeys.plist */; };
 		DEF7B90B1DD7C2BC00F696FF /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */; };
+		DEF7B9111DD7E3EA00F696FF /* ZillowListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B9101DD7E3EA00F696FF /* ZillowListing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = ../GlobalConstants.swift; sourceTree = "<group>"; };
 		DEF7B90C1DD7DB3200F696FF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		DEF7B90E1DD7DB3B00F696FF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		DEF7B9101DD7E3EA00F696FF /* ZillowListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZillowListing.swift; path = ../ZillowListing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		DEF7B8D21DD699DE00F696FF /* zillowGun */ = {
 			isa = PBXGroup;
 			children = (
+				DEF7B9101DD7E3EA00F696FF /* ZillowListing.swift */,
 				DEF7B90A1DD7C2BC00F696FF /* GlobalConstants.swift */,
 				DEF7B8D31DD699DE00F696FF /* AppDelegate.swift */,
 				DEF7B8D51DD699DE00F696FF /* ViewController.swift */,
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF7B9111DD7E3EA00F696FF /* ZillowListing.swift in Sources */,
 				DEF7B8D61DD699DE00F696FF /* ViewController.swift in Sources */,
 				DEF7B8D41DD699DE00F696FF /* AppDelegate.swift in Sources */,
 				DEF7B90B1DD7C2BC00F696FF /* GlobalConstants.swift in Sources */,
